@@ -1,2 +1,7 @@
-package com.works.services;public class UserService {
+package com.works.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
 }
