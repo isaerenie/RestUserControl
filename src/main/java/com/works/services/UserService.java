@@ -23,6 +23,8 @@ final UserRepository userRepository;
     }
      public ResponseEntity save(User user) {
          Map<ERest,Object> hm=new LinkedHashMap<>();
+         hm.put(ERest.result,userRepository.save(user));
+         hm.put(ERest.status,true);
          return new ResponseEntity(hm, HttpStatus.OK);
     }
 
